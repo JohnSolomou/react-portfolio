@@ -1,4 +1,6 @@
 .modalRoot {
+  display: flex;
+  color: royalblue;
   position: fixed;
   top: 0;
   z-index: 100;

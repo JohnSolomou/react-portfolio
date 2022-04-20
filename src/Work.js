@@ -1,55 +1,48 @@
 // import React, { useState } from "react";
-// import "./App.css";
-// import "bootstrap/dist/css/bootstrap.css";
-// import ToDo from "./img/ToDo.png";
-// import bh from "./img/bh.png";
-// import Quizzzy from "./img/Quizzzy.png";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import ToDo from "./img/ToDo.png";
+import bh from "./img/bh.png";
+import Quizzzy from "./img/Quizzzy.png";
+import ModalRoot from "./modals/components/ModalRoot";
+import ModalService from "./modals/Services/ModalService";
+import QuizzzyModal from "./components/QuizzzyModal";
+import BHRecipeModal from "./components/BHRecipeModal";
+import ToDoModal from "./components/ToDoModal";
 
-// import Quizmodal from "./modals/Quizmodal";
-// import Todomodal from "./modals/Todomodal";
-// import Bhmodal from "./modals/Bhmodal";
+function Work() {
+  const addModal = () => {
+    ModalService.open(QuizzzyModal);
+  };
+  const addModal2 = () => {
+    ModalService.open(BHRecipeModal);
+  };
+  const addModal3 = () => {
+    ModalService.open(ToDoModal);
+  };
 
-// function Work() {
-//   const [openModal, setOpenModal] = useState(false);
-//   const [openModal2, setOpenModal2] = useState(false);
-//   const [openModal3, setOpenModal3] = useState(false);
-//   return (
-//     <div id="work">
-//       <div className="container">
-//         <div className="row center justify-content-around">
-//           <h1>My Work</h1>
-//           <div style={{ MaxwWidth: "15rem" }} className=" col">
-//             <img
-//               src={Quizzzy}
-//               alt=""
-//               style={{ width: "15rem" }}
-//               onClick={() => setOpenModal(true)}
-//             />
-//             <Quizmodal open={openModal} onClose={() => setOpenModal(false)} />
-//           </div>
-//           <div style={{ MaxwWidth: "15rem" }} className=" col">
-//             <img
-//               src={bh}
-//               alt=""
-//               style={{ width: "15rem" }}
-//               onClick={() => setOpenModal2(true)}
-//             />
-//             <Bhmodal open={openModal2} onClose={() => setOpenModal2(false)} />
-//           </div>
+  return (
+    <div id="work">
+      <div className="container">
+        <div className="row center justify-content-around">
+          <h1>My Work</h1>
 
-//           {/* <div style={{ MaxwWidth: "15rem" }} className=" col">
-//             <img
-//               src={ToDo}
-//               alt=""
-//               style={{ width: "15rem" }}
-//               onClick={() => setOpenModal3(true)}
-//             />
-//             <Todomodal open={openModal3} onClose={() => setOpenModal3(false)} />
-//           </div>  */}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+          <ModalRoot />
+          <button onClick={addModal} className="btn  m-4 col">
+            <img src={Quizzzy} alt="" style={{ width: "15rem" }} />
+          </button>
 
-// export default Work;
+          <button onClick={addModal2} className="btn  m-4 col">
+            <img src={bh} alt="" style={{ width: "15rem" }} />
+          </button>
+
+          <button onClick={addModal3} className="btn  m-4 col">
+            <img src={ToDo} alt="" style={{ width: "15rem" }} />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Work;

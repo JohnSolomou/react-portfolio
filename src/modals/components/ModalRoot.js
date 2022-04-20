@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ModalService from "../services/ModalService";
+import ModalService from "../Services/ModalService";
 import styles from "../styles/ModalRoot.module.css";
 
 export default function ModalRoot() {
