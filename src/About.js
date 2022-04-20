@@ -21,8 +21,9 @@ import terminal from "./img/terminal.png";
 import sass from "./img/sass.svg";
 function About() {
   return (
-    <div>
-      <section style={{ marginTop: "20px" }} id="about">
+    <div className="center" id="about">
+      <section style={{ marginTop: "20px" }}>
+        <h1 className="co">About</h1>
         <div className="container card center about-info">
           <div className="row">
             <div className="col-sm-12">
@@ -31,7 +32,7 @@ function About() {
                   <div className="col-md-6">
                     <div className="row">
                       <div className="col-sm-6 col-md-5">
-                        <div className="about-img">
+                        <div className="about-img ">
                           <img
                             src={me}
                             style={{ width: "9em", height: "9em" }}
@@ -125,12 +126,12 @@ function About() {
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="NodeJS" class="tech-logo">
+                          <div title="NodeJS" className="tech-logo">
                             <img className="image" src={node} alt="NodeJS" />
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="Firebase" class="tech-logo">
+                          <div title="Firebase" className="tech-logo">
                             <img
                               className="image"
                               src={firebase}
@@ -163,7 +164,7 @@ function About() {
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="PostgreSQL" class="tech-logo">
+                          <div title="PostgreSQL" className="tech-logo">
                             <img
                               className="image"
                               src={postgresql}
@@ -172,12 +173,12 @@ function About() {
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="ReactJS" class="tech-logo">
+                          <div title="ReactJS" className="tech-logo">
                             <img className="image" src={react} alt="ReactJS" />
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="SASS" class="tech-logo">
+                          <div title="SASS" className="tech-logo">
                             <img className="image" src={sass} alt="SASS" />
                           </div>
                         </div>
@@ -194,12 +195,12 @@ function About() {
                           />
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="Chrome" class="tech-logo">
+                          <div title="Chrome" className="tech-logo">
                             <img className="image" src={chrome} alt="Chrome" />
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="Github" class="tech-logo">
+                          <div title="Github" className="tech-logo">
                             <a
                               href="https://github.com/JohnSolomou"
                               target="_blank"
@@ -214,7 +215,7 @@ function About() {
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="Postman" class="tech-logo">
+                          <div title="Postman" className="tech-logo">
                             <img
                               className="image"
                               src={postman}
@@ -223,7 +224,7 @@ function About() {
                           </div>
                         </div>
                         <div className="col col-md-3 mb-3">
-                          <div title="Terminal" class="tech-logo">
+                          <div title="Terminal" className="tech-logo">
                             <img
                               className="image"
                               src={terminal}

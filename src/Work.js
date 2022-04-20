@@ -1,51 +1,55 @@
-import React from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import { Card, Button } from "react-bootstrap";
-import ToDo from "./img/ToDo.png";
-import bh from "./img/bh.png";
-import Quizzzy from "./img/Quizzzy.png";
-import github from "./img/GitHub-Mark-32px.png";
-function Work() {
-  return (
-    <div>
-      <div className="container">
-        <div className="row center justify-content-around">
-          <Card classname="" style={{ width: "18rem" }}>
-            <a href=" https://myquizzzyapp.herokuapp.com/">
-              <Card.Img variant="top" src={Quizzzy} />
-            </a>
-            <Card.Body>
-              <Card.Title>Quizzzy</Card.Title>
-              {/* <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text> */}
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={bh} />
-            <Card.Body>
-              <Card.Title>To Do App</Card.Title>
-              {/* <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text> */}
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={ToDo} />
-            <Card.Body>
-              <Card.Title>To Do App</Card.Title>
+// import React, { useState } from "react";
+// import "./App.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// import ToDo from "./img/ToDo.png";
+// import bh from "./img/bh.png";
+// import Quizzzy from "./img/Quizzzy.png";
 
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
-      </div>
-    </div>
-  );
-}
+// import Quizmodal from "./modals/Quizmodal";
+// import Todomodal from "./modals/Todomodal";
+// import Bhmodal from "./modals/Bhmodal";
 
-export default Work;
+// function Work() {
+//   const [openModal, setOpenModal] = useState(false);
+//   const [openModal2, setOpenModal2] = useState(false);
+//   const [openModal3, setOpenModal3] = useState(false);
+//   return (
+//     <div id="work">
+//       <div className="container">
+//         <div className="row center justify-content-around">
+//           <h1>My Work</h1>
+//           <div style={{ MaxwWidth: "15rem" }} className=" col">
+//             <img
+//               src={Quizzzy}
+//               alt=""
+//               style={{ width: "15rem" }}
+//               onClick={() => setOpenModal(true)}
+//             />
+//             <Quizmodal open={openModal} onClose={() => setOpenModal(false)} />
+//           </div>
+//           <div style={{ MaxwWidth: "15rem" }} className=" col">
+//             <img
+//               src={bh}
+//               alt=""
+//               style={{ width: "15rem" }}
+//               onClick={() => setOpenModal2(true)}
+//             />
+//             <Bhmodal open={openModal2} onClose={() => setOpenModal2(false)} />
+//           </div>
+
+//           {/* <div style={{ MaxwWidth: "15rem" }} className=" col">
+//             <img
+//               src={ToDo}
+//               alt=""
+//               style={{ width: "15rem" }}
+//               onClick={() => setOpenModal3(true)}
+//             />
+//             <Todomodal open={openModal3} onClose={() => setOpenModal3(false)} />
+//           </div>  */}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Work;

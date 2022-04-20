@@ -8,7 +8,7 @@ export default function Hero() {
       <section className="dark-hero">
         <div>
           <div className="hero">
-            <h1 className="center">John Solomou</h1>
+            <h1 className="center glow">John Solomou</h1>
           </div>
           <div className="h-container center">
             <div>

@@ -26,7 +26,7 @@ function Footer() {
               href="https://github.com/JohnSolomou"
               role="button"
             >
-              <img src={github} />
+              <img src={github} alt="" />
             </a>
             <a
               className="btn btn-outline-light btn-floating m-1"
@@ -35,19 +35,15 @@ function Footer() {
             >
               <i className="fa-solid fa-arrow-turn-up fa-beat">Back to top</i>
             </a>
-            <i className="fa-solid fa-arrow-turn-up fa-beat"></i>
+            {/* <i className="fa-solid fa-arrow-turn-up fa-beat"></i> */}
           </section>
           {/* <!-- Section: Social media --> */}
+          <div className="text-center p-3">© 2022 Copyright</div>
         </div>
         {/* <!-- Grid container --> */}
 
         {/* <!-- Copyright --> */}
-        <div
-          className="text-center p-3"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-        >
-          © 2022 Copyright
-        </div>
+
         {/* <!-- Copyright --> */}
       </footer>
     </div>
