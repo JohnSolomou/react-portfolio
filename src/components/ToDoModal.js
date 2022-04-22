@@ -9,7 +9,11 @@ export default function ToDoModal(props) {
     <Modal>
       <ModalHeader>
         <h3>To Do </h3>
-        <a href="https://bhrecipe.herokuapp.com/">
+        <a
+          href="https://bhrecipe.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="m-img" src={ToDo} alt="goes to " />
         </a>
       </ModalHeader>

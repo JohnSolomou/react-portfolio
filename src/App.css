@@ -73,7 +73,7 @@ div.brackets a:hover:after {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 600px;
+  height: 850px;
   opacity: 0.5;
 }
 .center {
@@ -212,4 +212,14 @@ p {
   .m-img {
     width: 100%;
   }
+}
+/* modal img hover */
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.5);
 }

@@ -2,35 +2,35 @@ import ModalFooter from "../modals/components/ModalFooter";
 import Modal from "../modals/components/Modal";
 import ModalBody from "../modals/components/ModalBody";
 import ModalHeader from "../modals/components/ModalHeader";
-import bh from "../img/bh.png";
+import quiz2 from "../img/quiz2.jpg";
 import github from "../img/GitHub-Mark-32px.png";
-export default function BHRecipeModal(props) {
+export default function ReactQuizModal(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>BH Recipe</h3>
-        <a
-          href="https://bhrecipe.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img className="m-img" src={bh} alt="goes to BHRecipe.com" />
+        <h3>React Quizzzy</h3>
+        <a href="">
+          <img className="m-img" src={quiz2} alt="goes to Quizzzy.com" />
         </a>
       </ModalHeader>
       <ModalBody>
         <p>
-          This is a Gluten-free Search app. Use this application to find
-          delicious alternative with out the gluten. Developed front-end user
-          experience using HTML, CSS, CSS Grid, Javascript, and RESTful APIs.
-          click here for github.
+          Recreated my Quiz app using React. This is an application for anyone
+          to add a quiz for anyone to take using HTML, CSS, Javascript, svg,
+          postgreSQL, has sign in and private routes with firebase
+          authentication. This is an app in progress.
         </p>
       </ModalBody>
       <ModalFooter>
-        <a href="https://github.com/JohnSolomou/capstone2">
+        <a
+          href="https://github.com/JohnSolomou/react-quizzzy"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className="btn btn-outline-light btn-floating"
+            alt="github"
             src={github}
-            alt="goes to github"
           />
         </a>
         <button onClick={props.close} className="btn btn-primary">

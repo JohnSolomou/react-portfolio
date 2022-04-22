@@ -9,7 +9,11 @@ export default function QuizzzyModal(props) {
     <Modal>
       <ModalHeader>
         <h3>Quizzzy</h3>
-        <a href=" https://myquizzzyapp.herokuapp.com/">
+        <a
+          href="https://mighty-retreat-41731.herokuapp.com/index.html"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="m-img" src={Quiz} alt="goes to Quizzzy.com" />
         </a>
       </ModalHeader>
@@ -22,7 +26,11 @@ export default function QuizzzyModal(props) {
       </ModalBody>
       <ModalFooter>
         <a href="https://github.com/JohnSolomou/quizzzy">
-          <img className="btn btn-outline-light btn-floating" src={github} />
+          <img
+            className="btn btn-outline-light btn-floating"
+            alt=""
+            src={github}
+          />
         </a>
         <button onClick={props.close} className="btn btn-primary">
           Close Modal
