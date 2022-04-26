@@ -1,18 +1,19 @@
 import "./App.css";
 import Hero from "./Hero";
 import React from "react";
-import Nav from "./Nav";
+import Navigation from "./Nav";
 import About from "./About";
 import Work from "./Work";
 import Footer from "./Footer";
 
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 function App() {
   return (
     <div>
-      <Nav></Nav>
-      <Hero></Hero>
-      <About></About>
+      <Navigation></Navigation>
+      <Hero />
+      <About />
       <Work />
 
       <Footer></Footer>

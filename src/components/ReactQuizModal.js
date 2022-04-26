@@ -9,7 +9,7 @@ export default function ReactQuizModal(props) {
     <Modal>
       <ModalHeader>
         <h3>React Quizzzy</h3>
-        <a href="">
+        <a href="https://quizzzy-45030.web.app/">
           <img className="m-img" src={quiz2} alt="goes to Quizzzy.com" />
         </a>
       </ModalHeader>

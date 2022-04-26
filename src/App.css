@@ -38,19 +38,7 @@ div.brackets a:hover:after {
 }
 
 /* hero */
-.glow {
-  font-family: "Prosto One";
-  font-weight: 400;
-  font-size: 64px;
-  /* 
- 
-  font-style: normal;
-  text-shadow: 0 0 12px cyan;
-  text-rendering: optimizeLegibility;
-  padding: 12px 24px;
-  display: inline-block;
-  -webkit-animation: glow 1.9s linear infinite; */
-}
+
 /* ANIMATION */
 /* @-webkit-keyframes glow {
   0% {
@@ -73,7 +61,7 @@ div.brackets a:hover:after {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 850px;
+  height: 700px;
   opacity: 0.5;
 }
 .center {

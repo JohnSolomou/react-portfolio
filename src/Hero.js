@@ -1,7 +1,8 @@
 import keyboard from "./img/keyboard.jpg";
 import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 export default function Hero() {
   return (
     <div>

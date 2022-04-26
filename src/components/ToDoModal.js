@@ -10,7 +10,7 @@ export default function ToDoModal(props) {
       <ModalHeader>
         <h3>To Do </h3>
         <a
-          href="https://bhrecipe.herokuapp.com/"
+          href="https://auth-fb-ar.firebaseapp.com/"
           target="_blank"
           rel="noreferrer"
         >

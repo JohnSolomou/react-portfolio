@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 
+import "bootstrap/dist/js/bootstrap.min.js";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
