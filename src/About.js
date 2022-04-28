@@ -39,7 +39,7 @@ function About() {
                     </div>
                     <div className="skill-mf">
                       <div className="about-me title-s">About me</div>
-                      <div>
+                      <div style={{ color: "black" }}>
                         I am a Software engineer with ability to learn and
                         collaborate in rapidly changing environments and
                         compositions. Worked through 1000+ hours of bootcamp
