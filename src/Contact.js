@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
 export default function Contact() {
-  const [sent, setSend] = useState(false);
-  const [text, setText] = useState("");
+  const [sent, setSent] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = "";
 
   const handleSend = async () => {
-    setSend(true);
+    setSent(true);
     try {
       await axios.post("http://localhost:4000/send_mail", {
-        text,
+        name,
+        email,
+        subject,
+        message,
       });
     } catch (error) {
       console.log(error);
@@ -44,8 +50,8 @@ export default function Contact() {
                                     id="name"
                                     placeholder="Your Name"
                                     required
-                                    value={text}
-                                    onChange={(e) => setText(e.target.value)}
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                   />{" "}
                                 </div>
                               </div>
@@ -58,6 +64,8 @@ export default function Contact() {
                                     id="email"
                                     placeholder="Your Email"
                                     required=""
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                   />
                                 </div>
                               </div>
@@ -70,6 +78,8 @@ export default function Contact() {
                                     id="subject"
                                     placeholder="Subject"
                                     required=""
+                                    value={subject}
+                                    onChange={(e) => setSubject(e.target.value)}
                                   />
                                 </div>
                               </div>
@@ -81,6 +91,8 @@ export default function Contact() {
                                     rows="5"
                                     placeholder="Message"
                                     required=""
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
                                   ></textarea>
                                 </div>
                               </div>
