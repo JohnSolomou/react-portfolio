@@ -28,7 +28,7 @@ function Footer() {
             >
               <img src={github} alt="" />
             </a>
-            <a
+            {/* <a
               className="btn btn-outline-light btn-floating m-1"
               href=""
               role="button"
@@ -36,7 +36,7 @@ function Footer() {
               <i id="hero" className="fa-solid fa-arrow-turn-up fa-beat">
                 Back to top
               </i>
-            </a>
+            </a> */}
           </section>
           {/* <!-- Section: Social media --> */}
           <div className="text-center p-3">© 2022 Copyright</div>
