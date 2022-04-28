@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import me from "./img/Me.png";
 import html from "./img/html.png";
 import css from "./img/css.png";
 import js from "./img/js.png";
@@ -21,9 +20,11 @@ import terminal from "./img/terminal.png";
 import sass from "./img/sass.svg";
 function About() {
   return (
-    <div className="center" id="about">
-      <section style={{ marginTop: "20px" }}>
-        <h1 className="co">About</h1>
+    <div className="center move-down-about" id="about">
+      <section style={{ paddingTop: "100px" }}>
+        <h1 className="co " style={{ marginBottom: "60px" }}>
+          About
+        </h1>
         <div className="container card center about-info">
           <div className="row">
             <div className="col-sm-12">
@@ -32,33 +33,9 @@ function About() {
                   <div className="col-md-6">
                     <div className="row">
                       <div className="col-sm-6 col-md-5">
-                        <div className="about-img ">
-                          <img
-                            src={me}
-                            style={{ width: "9em", height: "9em" }}
-                            alt=""
-                          />
-                        </div>
+                        <div className=""></div>
                       </div>
-                      <div className="col-sm-6 col-md-7">
-                        <div className="about-info">
-                          <div>
-                            <span className="title-s">Name:</span> John Solomou
-                          </div>
-                          <div>
-                            <span className="title-s">Profile:</span> Front End
-                            Web Developer
-                          </div>
-                          <div>
-                            <span className="title-s">Email:</span>
-                            solomoufam@yahoo.com
-                          </div>
-                          <div>
-                            <span className="title-s">Phone:</span> (267)
-                            220-0116
-                          </div>
-                        </div>
-                      </div>
+                      <div className="col-sm-6 col-md-7"></div>
                     </div>
                     <div className="skill-mf">
                       <div className="about-me title-s">About me</div>
@@ -78,7 +55,7 @@ function About() {
                       <div className="title-box-2">
                         <h5>Skills</h5>
                       </div>
-                      <div className="row tech-logo pb-5">
+                      <div className="row tech-logo ">
                         <div className="col col-md-3 mb-3">
                           <img
                             className="image"

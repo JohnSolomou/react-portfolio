@@ -4,7 +4,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 function Navigation() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="dark-hero"
+      variant="dark"
+      className="center  sticky-top"
+    >
       <Navbar.Brand href="#home">
         {/* <Logo
           alt=""
@@ -13,9 +19,9 @@ function Navigation() {
           className="d-inline-block align-top"
         /> */}
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav " className="m-2 " />
       <Navbar.Collapse
-        className="  justify-content-end"
+        className="  justify-content-end "
         id="responsive-navbar-nav"
       >
         <div className="brackets ">

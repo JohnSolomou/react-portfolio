@@ -27,30 +27,32 @@ function Work() {
     ModalService.open(ReactQuizModal);
   };
   return (
-    <div id="work">
-      <div className="container">
-        <div className="row center justify-content-around">
-          <h1>My Work</h1>
+    <div className="work">
+      <div className="container ">
+        <div className="row center align-items-center pad">
+          <h2 id="work" className="pad mywork mt-5">
+            My Work
+          </h2>
           <ModalRoot />{" "}
           <div className="inner col">
-            <button onClick={addModal} className="btn inner  m-4 ">
-              <img src={Quizzzy} alt="" style={{ width: "15rem" }} />
-            </button>
+            <div onClick={addModal} className="btn inner  m-4 ">
+              <img src={Quizzzy} alt="" style={{ width: "10rem" }} />
+            </div>
           </div>
           <div className="inner col">
-            <button onClick={addModal2} className="btn  m-4 ">
-              <img src={bh} alt="" style={{ width: "15rem" }} />
-            </button>
+            <div onClick={addModal2} className="btn  m-4 ">
+              <img src={bh} alt="" style={{ width: "10rem" }} />
+            </div>
           </div>
           <div className="inner col">
-            <button onClick={addModal3} className="btn  m-4 ">
-              <img src={ToDo} alt="" style={{ width: "15rem" }} />
-            </button>
+            <div onClick={addModal3} className="btn  m-4 ">
+              <img src={ToDo} alt="" style={{ width: "10rem" }} />
+            </div>
           </div>
           <div className="inner col">
-            <button onClick={addModal4} className="btn  m-4 ">
-              <img src={quiz2} alt="" style={{ width: "15rem" }} />
-            </button>
+            <div onClick={addModal4} className="btn  m-4 ">
+              <img src={quiz2} alt="" style={{ width: "10rem" }} />
+            </div>
           </div>
         </div>
       </div>

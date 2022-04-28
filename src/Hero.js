@@ -1,4 +1,3 @@
-import keyboard from "./img/keyboard.jpg";
 import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,14 +5,16 @@ import "bootstrap/dist/js/bootstrap.min.js";
 export default function Hero() {
   return (
     <div>
-      <section className="dark-hero">
-        <div>
-          <div className="hero">
-            <h1 className="center glow">John Solomou</h1>
+      <section className="dark-hero stars">
+        <div className="twinkling">
+          <div className="hero ">
+            <h1 href="#hero" className="center move-down">
+              John Solomou
+            </h1>
           </div>
-          <div className="h-container center">
+          <div className="h-container center ">
             <div>
-              <h1 className="typed-text">
+              <h1 className="typed-text ">
                 <TypeWriterEffect
                   textStyle={{
                     fontFamily: "Red Hat Display",
@@ -21,7 +22,7 @@ export default function Hero() {
                     fontWeight: 500,
                     fontSize: "1.5em",
                   }}
-                  startDelay={2000}
+                  startDelay={1000}
                   cursorColor="#3F3D56"
                   multiText={[
                     "Front End Developer",
@@ -47,7 +48,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <img src={keyboard} className="hero-overlay hero-img" alt="" />
       </section>
     </div>
   );

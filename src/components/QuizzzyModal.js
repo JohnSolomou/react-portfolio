@@ -15,13 +15,15 @@ export default function QuizzzyModal(props) {
           rel="noreferrer"
         >
           <img className="m-img" src={Quiz} alt="goes to Quizzzy.com" />
+          <p>click for Demo</p>
         </a>
       </ModalHeader>
+
       <ModalBody>
         <p>
           Created a Quiz app. This is an application for teachers to add a quiz
-          for students to take using HTML, CSS, Javascript, svg, and local
-          storage.
+          for students to take.This application is using HTML, CSS, Javascript,
+          svg, and local storage.
         </p>
       </ModalBody>
       <ModalFooter>

@@ -15,6 +15,7 @@ export default function ToDoModal(props) {
           rel="noreferrer"
         >
           <img className="m-img" src={ToDo} alt="goes to " />
+          <p>click for Demo</p>
         </a>
       </ModalHeader>
       <ModalBody>

@@ -1,94 +1,174 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
 export default function Contact() {
+  const [sent, setSend] = useState(false);
+  const [text, setText] = useState("");
+
+  const handleSend = async () => {
+    setSend(true);
+    try {
+      await axios.post("http://localhost:4000/send_mail", {
+        text,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="contact-mf">
-            <div id="contact" className="box-shadow-full">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="title-box-2">
-                    <h5 className="title-left">Send me a message</h5>
-                  </div>
-                  <div>
-                    <form action="" method="post">
-                      <div className="row">
-                        <div className="col-md-12 mb-3">
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              name="name"
-                              class="form-control"
-                              id="name"
-                              placeholder="Your Name"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12 mb-3">
-                          <div className="form-group">
-                            <input
-                              type="email"
-                              class="form-control"
-                              name="email"
-                              id="email"
-                              placeholder="Your Email"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12 mb-3">
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="subject"
-                              id="subject"
-                              placeholder="Subject"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12 ">
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="subject"
-                              id="subject"
-                              placeholder="Subject"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12 text-center my-3"></div>
-                        <div className="col-md-12 text-center"></div>
+    <div className="pad dark-hero">
+      <h2 id="contact" className="center dark-hero pad ">
+        Contact
+      </h2>
+
+      <section className="dark-contact ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left"> Send Me a Message</h5>
                       </div>
-                    </form>
+                      <div>
+                        {!sent ? (
+                          <form onSubmit={handleSend}>
+                            <div class="row">
+                              <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Your Name"
+                                    required
+                                    value={text}
+                                    onChange={(e) => setText(e.target.value)}
+                                  />{" "}
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Your Email"
+                                    required=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    name="subject"
+                                    id="subject"
+                                    placeholder="Subject"
+                                    required=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <textarea
+                                    class="form-control"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Message"
+                                    required=""
+                                  ></textarea>
+                                </div>
+                              </div>
+                              {/* <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">
+                                Your message has been sent. Thank you!
+                              </div>
+                            </div> */}
+                              <div class="col-md-12 text-center">
+                                <button
+                                  type="submit"
+                                  class="button button-a button-big button-rouded"
+                                >
+                                  Send Message
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        ) : (
+                          <h1 variant="success">Email Sent</h1>
+                        )}
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left"> Get in Touch</h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">
+                          {" "}
+                          If you have would like to contact me please send me a
+                          message or email me.
+                        </p>
+                        <ul class="list-ico">
+                          {/* <li>
+                            <span class="bi bi-geo-alt"></span> John Solomou
+                          </li> */}
+                          {/* <li>
+                            <span class="bi bi-phone"></span> 
+                          </li> */}
+                          <li>
+                            <span class="bi bi-envelope"></span>{" "}
+                            jsolomou79@gmail.com
+                          </li>
+                        </ul>
+                      </div>
+                      {/* <div class="socials">
+                        <ul>
+                          <li>
+                            <a href="">
+                              <span class="ico-circle">
+                                <i class="bi bi-facebook"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span class="ico-circle">
+                                <i class="bi bi-instagram"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span class="ico-circle">
+                                <i class="bi bi-twitter"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span class="ico-circle">
+                                <i class="bi bi-linkedin"></i>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div> */}
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="title-box-2 pt-4 pt-md-0">
-                    <h5 title-left>Get In Touch </h5>
-                  </div>
-                </div>
-                <div className="more-info">
-                  <p></p>
-                </div>
-                <div className="socials">
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

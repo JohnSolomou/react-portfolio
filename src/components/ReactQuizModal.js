@@ -11,14 +11,16 @@ export default function ReactQuizModal(props) {
         <h3>React Quizzzy</h3>
         <a href="https://quizzzy-45030.web.app/">
           <img className="m-img" src={quiz2} alt="goes to Quizzzy.com" />
+          <p>click for Demo</p>
         </a>
       </ModalHeader>
       <ModalBody>
+        <p className="text-danger"> This is an app in progress.</p>
         <p>
           Recreated my Quiz app using React. This is an application for anyone
-          to add a quiz for anyone to take using HTML, CSS, Javascript, svg,
-          postgreSQL, has sign in and private routes with firebase
-          authentication. This is an app in progress.
+          to add a quiz for anyone to take.This application is using HTML, CSS,
+          Javascript, svg, postgreSQL, has sign in and private routes with
+          firebase authentication.
         </p>
       </ModalBody>
       <ModalFooter>

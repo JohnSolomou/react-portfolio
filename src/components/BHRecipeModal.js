@@ -15,6 +15,7 @@ export default function BHRecipeModal(props) {
           rel="noreferrer"
         >
           <img className="m-img" src={bh} alt="goes to BHRecipe.com" />
+          <p>click for Demo</p>
         </a>
       </ModalHeader>
       <ModalBody>

@@ -30,21 +30,17 @@ function Footer() {
             </a>
             <a
               className="btn btn-outline-light btn-floating m-1"
-              href="#home"
+              href=""
               role="button"
             >
-              <i className="fa-solid fa-arrow-turn-up fa-beat">Back to top</i>
+              <i id="hero" className="fa-solid fa-arrow-turn-up fa-beat">
+                Back to top
+              </i>
             </a>
-            {/* <i className="fa-solid fa-arrow-turn-up fa-beat"></i> */}
           </section>
           {/* <!-- Section: Social media --> */}
           <div className="text-center p-3">© 2022 Copyright</div>
         </div>
-        {/* <!-- Grid container --> */}
-
-        {/* <!-- Copyright --> */}
-
-        {/* <!-- Copyright --> */}
       </footer>
     </div>
   );

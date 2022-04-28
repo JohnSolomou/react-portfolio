@@ -6,9 +6,12 @@
 }
 
 body {
-  background: black;
+  background-color: black;
 }
 /* navbar */
+.navbar {
+  z-index: 3;
+}
 /* Brackets go out */
 div.brackets a:before,
 div.brackets a:after {
@@ -38,6 +41,86 @@ div.brackets a:hover:after {
 }
 
 /* hero */
+.move-down {
+  margin-top: 200px;
+  padding-top: 40px;
+}
+div.move-down-about {
+  margin: 800px 0 0;
+  padding: 0;
+}
+.mywork {
+  margin-bottom: 100px;
+}
+.title h1 {
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  /* Stryling the text and giving it gradiant */
+  color: #ffffff;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+
+  /* Make sure text is infront of background images */
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(../src/img/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(../src/img/twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(../src/img/clouds.png) repeat top center;
+  z-index: 2;
+  opacity: 0.4;
+  animation: move-clouds-back 200s linear infinite;
+}
 
 /* ANIMATION */
 /* @-webkit-keyframes glow {
@@ -51,10 +134,15 @@ div.brackets a:hover:after {
     text-shadow: 0 0 2px cyan;
   }
 } */
+.nav-link {
+  color: #eee;
+  z-index: 4;
+}
 .dark-hero {
-  font-family: "Prosto One";
+  /* font-family: "Prosto One"; */
   background-color: black;
   color: whitesmoke;
+  margin: 0;
 }
 .hero-img {
   display: block;
@@ -90,6 +178,8 @@ div.brackets a:hover:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
+  padding: 20px;
 } */
 .cursor {
   display: inline-block;
@@ -128,7 +218,7 @@ position: absolute;
   background-color: black;
   display: flex;
 }
-#work {
+.work {
   background-color: black;
   color: #fff;
 }
@@ -143,9 +233,11 @@ p {
 .about-info {
   height: 90%;
   width: 100%;
-  font-size: 12px;
+  font-size: 20px;
   text-align: left;
-  padding-bottom: 40px;
+}
+.skill-mf {
+  padding-top: 50px;
 }
 .title-s {
   font-weight: 600;
@@ -153,11 +245,14 @@ p {
   font-size: 1.1rem;
 }
 .pad {
-  padding-top: 20px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 /* 
 /* Portfolio cards css */
-
+btn {
+  margin: 0;
+}
 /* modal */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -211,3 +306,20 @@ p {
 .inner:hover img {
   transform: scale(1.5);
 }
+/* contact form */
+.dark-contact {
+  font-family: "Prosto One";
+  background-color: black;
+  margin: 0 0 0 0;
+  color: #eee;
+}
+.button-rouded {
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+/* media query */
