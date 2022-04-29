@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ToDo from "./img/ToDo.png";
@@ -11,7 +11,7 @@ import QuizzzyModal from "./components/QuizzzyModal";
 import BHRecipeModal from "./components/BHRecipeModal";
 import ReactQuizModal from "./components/ReactQuizModal";
 import ToDoModal from "./components/ToDoModal";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function Work() {
   const addModal = () => {
@@ -28,158 +28,135 @@ function Work() {
     ModalService.open(ReactQuizModal);
   };
   return (
-    <div className="work">
-      <div className="container ">
-        <div className="row center align-items-center pad justify-content-between">
-          <h2 id="work" className="pad mywork mt-5">
-            My Work
-          </h2>
-          <ModalRoot />{" "}
-          <Card className="work-img" style={{ width: "18rem", padding: "0px" }}>
-            <Card.Img variant="top" src={Quizzzy} className="img-fluid" />
-            <Card.Body className="container">
+    <div className="work ">
+      <div className="container pad">
+        <h2 id="work" className="pad mywork center mt-5">
+          My Work
+        </h2>
+        <div className="row center2 align-items-center  pad justify-content-between ">
+          <ModalRoot />
+
+          <Card
+            className="work-img img-zoom-container  "
+            style={{ width: "18rem", padding: "0px" }}
+          >
+            <a
+              href="https://mighty-retreat-41731.herokuapp.com/index.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Card.Img variant="top" src={Quizzzy} className="img-fluid" />
+            </a>
+            <Card.Body className="container center">
               <Card.Title style={{ color: "black" }}>Quizzzy</Card.Title>
 
-              <div className="row">
-                <Button className="col" variant="primary">
-                  <a
-                    href="https://mighty-retreat-41731.herokuapp.com/index.html"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{
-                      color: "white",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Go to website
-                  </a>
-                </Button>{" "}
-                <Button
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "rgba(0,0,0,0.2)",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: 50,
-                  }}
-                  className=" justify-align-content-between"
-                  onClick={addModal}
-                  variant="primary"
-                >
-                  +
-                </Button>
+              <div>
+                <div className="work-button">
+                  <div className="icon">
+                    <div
+                      style={{
+                        color: "blue",
+                        cursor: "pointer",
+                      }}
+                      onClick={addModal}
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card.Body>
           </Card>
-          <Card className="work-img" style={{ width: "18rem", padding: "0px" }}>
-            <Card.Img variant="top" src={bh} className="img-fluid" />
-            <Card.Body className="container">
+
+          <Card
+            className="work-img img-zoom-container"
+            style={{ width: "18rem", padding: "0px" }}
+          >
+            <a
+              href="https://bhrecipe.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <Card.Img variant="top" src={bh} className="img-fluid" />
+            </a>
+            <Card.Body className="container center">
               <Card.Title style={{ color: "black" }}>BHRecipe</Card.Title>
 
-              <div className="row">
-                <Button className="col" variant="primary">
-                  <a
-                    href="https://bhrecipe.herokuapp.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ color: "white", textDecoration: "none" }}
-                  >
-                    Go to website
-                  </a>
-                </Button>{" "}
-                <Button
-                  className=""
-                  onClick={addModal2}
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "rgba(0,0,0,0.2)",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: 50,
-                  }}
-                  variant="primary"
-                >
-                  +
-                </Button>
+              <div>
+                <div className="work-button">
+                  <div className="icon">
+                    <div
+                      style={{ color: "blue", cursor: "pointer" }}
+                      onClick={addModal2}
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card.Body>
           </Card>
-          <Card className="work-img" style={{ width: "18rem", padding: "0px" }}>
-            <Card.Img variant="top" src={ToDo} className="img-fluid" />
-            <Card.Body className="container">
-              <Card.Title style={{ color: "black" }}>BHRecipe</Card.Title>
+          <Card
+            className="work-img img-zoom-container"
+            style={{ width: "18rem", padding: "0px" }}
+          >
+            <a
+              href="https://auth-fb-ar.firebaseapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <Card.Img variant="top" src={ToDo} className="img-fluid" />
+            </a>
+            <Card.Body className="container center">
+              <Card.Title style={{ color: "black" }}>To Do</Card.Title>
 
-              <div className="row">
-                <Button className="col" variant="primary">
-                  <a
-                    href="https://auth-fb-ar.firebaseapp.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ color: "white", textDecoration: "none" }}
-                  >
-                    Go to website
-                  </a>
-                </Button>{" "}
-                <Button
-                  className=""
-                  onClick={addModal3}
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "rgba(0,0,0,0.2)",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: 50,
-                  }}
-                  variant="primary"
-                >
-                  +
-                </Button>
+              <div>
+                <div className="work-button">
+                  <div className="icon">
+                    <div
+                      style={{ color: "blue", cursor: "pointer" }}
+                      onClick={addModal3}
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card.Body>
           </Card>
-          <Card className="work-img" style={{ width: "18rem", padding: "0px" }}>
-            <Card.Img
-              style={{ maxHeight: 131 }}
-              variant="top"
-              src={quiz2}
-              className="img-fluid"
-            />
-            <Card.Body className="container">
-              <Card.Title style={{ color: "black" }}>BHRecipe</Card.Title>
+          <Card
+            className="work-img img-zoom-container"
+            style={{ width: "18rem", padding: "0px" }}
+          >
+            <a
+              href="https://quizzzy-45030.web.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <Card.Img
+                style={{ maxHeight: 131 }}
+                variant="top"
+                src={quiz2}
+                className="img-fluid"
+              />
+            </a>
+            <Card.Body className="container center">
+              <Card.Title style={{ color: "black" }}>React Quizzzy</Card.Title>
 
-              <div className="row">
-                <Button className="col" variant="primary">
-                  <a
-                    href="https://quizzzy-45030.web.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ color: "white", textDecoration: "none" }}
-                  >
-                    Go to website
-                  </a>
-                </Button>{" "}
-                <Button
-                  className=""
-                  onClick={addModal4}
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "rgba(0,0,0,0.2)",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: 50,
-                  }}
-                  variant="primary"
-                >
-                  +
-                </Button>
+              <div className=" col">
+                <div className="work-button">
+                  <div className="icon">
+                    <div
+                      style={{ color: "blue", cursor: "pointer" }}
+                      onClick={addModal4}
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card.Body>
           </Card>

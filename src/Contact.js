@@ -125,7 +125,7 @@ export default function Contact() {
                       <div class="more-info">
                         <p class="lead">
                           {" "}
-                          If you have would like to contact me please send me a
+                          If you would like to contact me please send me a
                           message or email me.
                         </p>
                         <ul class="list-ico">
