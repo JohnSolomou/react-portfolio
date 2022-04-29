@@ -5,7 +5,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
-  const [message, setMessage] = "";
+  const [message, setMessage] = useState("");
 
   const handleSend = async () => {
     setSent(true);
