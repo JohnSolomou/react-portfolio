@@ -33,7 +33,7 @@ function Work() {
         <h2 id="work" className="pad mywork center mt-5">
           My Work
         </h2>
-        <div className="row center2 align-items-center  pad justify-content-between ">
+        <div className=" align-items-center  pad justify-content-between ">
           <ModalRoot />
 
           <Card
