@@ -33,12 +33,12 @@ function Work() {
         <h2 id="work" className="pad mywork center mt-5">
           My Work
         </h2>
-        <div className=" align-items-center  pad justify-content-between ">
+        <div className=" row align-items-center  pad justify-content-between ">
           <ModalRoot />
 
           <Card
-            className="work-img img-zoom-container  "
-            style={{ width: "18rem", padding: "0px" }}
+            className="work-img img-zoom-container pb "
+            style={{ width: "18rem", marginBottom: "40Px" }}
           >
             <a
               href="https://mighty-retreat-41731.herokuapp.com/index.html"
@@ -69,8 +69,8 @@ function Work() {
           </Card>
 
           <Card
-            className="work-img img-zoom-container"
-            style={{ width: "18rem", padding: "0px" }}
+            className="work-img img-zoom-container pb"
+            style={{ width: "18rem", marginBottom: "40Px" }}
           >
             <a
               href="https://bhrecipe.herokuapp.com/"
@@ -98,8 +98,8 @@ function Work() {
             </Card.Body>
           </Card>
           <Card
-            className="work-img img-zoom-container"
-            style={{ width: "18rem", padding: "0px" }}
+            className="work-img img-zoom-container pb"
+            style={{ width: "18rem", marginBottom: "40Px" }}
           >
             <a
               href="https://auth-fb-ar.firebaseapp.com/"
@@ -127,8 +127,8 @@ function Work() {
             </Card.Body>
           </Card>
           <Card
-            className="work-img img-zoom-container"
-            style={{ width: "18rem", padding: "0px" }}
+            className="work-img img-zoom-container pb"
+            style={{ width: "18rem", marginBottom: "40Px" }}
           >
             <a
               href="https://quizzzy-45030.web.app/"
