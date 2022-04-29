@@ -297,7 +297,19 @@ btn {
   }
 }
 /* modal img hover */
-.inner {
+
+/* circle button */
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+/* .inner {
   overflow: hidden;
 }
 .inner img {
@@ -305,7 +317,7 @@ btn {
 }
 .inner:hover img {
   transform: scale(1.5);
-}
+} */
 /* contact form */
 .dark-contact {
   font-family: "Prosto One";
