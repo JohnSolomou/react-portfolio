@@ -10,7 +10,7 @@ export default function Contact() {
   const handleSend = async () => {
     setSent(true);
     try {
-      await axios.post("http://localhost:4000/send_mail", {
+      await axios.post(`${process.env.REACT_APP_BACK_END_URL}/send_mail`, {
         name,
         email,
         subject,
@@ -27,26 +27,26 @@ export default function Contact() {
       </h2>
 
       <section className="dark-contact ">
-        <div class="container ">
-          <div class="row ">
-            <div class="col-sm-12">
-              <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="title-box-2">
-                        <h5 class="title-left"> Send Me a Message</h5>
+        <div className="container ">
+          <div className="row ">
+            <div className="col-sm-12">
+              <div className="contact-mf">
+                <div id="contact" className="box-shadow-full">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="title-box-2">
+                        <h5 className="title-left"> Send Me a Message</h5>
                       </div>
                       <div>
                         {!sent ? (
                           <form onSubmit={handleSend}>
-                            <div class="row">
-                              <div class="col-md-12 mb-3">
-                                <div class="form-group">
+                            <div className="row">
+                              <div className="col-md-12 mb-3">
+                                <div className="form-group">
                                   <input
                                     type="text"
                                     name="name"
-                                    class="form-control"
+                                    className="form-control"
                                     id="name"
                                     placeholder="Your Name"
                                     required
@@ -55,11 +55,11 @@ export default function Contact() {
                                   />{" "}
                                 </div>
                               </div>
-                              <div class="col-md-12 mb-3">
-                                <div class="form-group">
+                              <div className="col-md-12 mb-3">
+                                <div className="form-group">
                                   <input
                                     type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     name="email"
                                     id="email"
                                     placeholder="Your Email"
@@ -69,11 +69,11 @@ export default function Contact() {
                                   />
                                 </div>
                               </div>
-                              <div class="col-md-12 mb-3">
-                                <div class="form-group">
+                              <div className="col-md-12 mb-3">
+                                <div className="form-group">
                                   <input
                                     type="text"
-                                    class="form-control"
+                                    className="form-control"
                                     name="subject"
                                     id="subject"
                                     placeholder="Subject"
@@ -83,10 +83,10 @@ export default function Contact() {
                                   />
                                 </div>
                               </div>
-                              <div class="col-md-12">
-                                <div class="form-group">
+                              <div className="col-md-12">
+                                <div className="form-group">
                                   <textarea
-                                    class="form-control"
+                                    className="form-control"
                                     name="message"
                                     rows="5"
                                     placeholder="Message"
@@ -103,10 +103,10 @@ export default function Contact() {
                                 Your message has been sent. Thank you!
                               </div>
                             </div> */}
-                              <div class="col-md-12 text-center">
+                              <div className="col-md-12 text-center">
                                 <button
                                   type="submit"
-                                  class="button button-a button-big button-rouded"
+                                  className="button button-a button-big button-rouded"
                                 >
                                   Send Message
                                 </button>
@@ -118,17 +118,17 @@ export default function Contact() {
                         )}
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="title-box-2 pt-4 pt-md-0">
-                        <h5 class="title-left"> Get in Touch</h5>
+                    <div className="col-md-6">
+                      <div className="title-box-2 pt-4 pt-md-0">
+                        <h5 className="title-left"> Get in Touch</h5>
                       </div>
-                      <div class="more-info">
-                        <p class="lead">
+                      <div className="more-info">
+                        <p className="lead">
                           {" "}
                           If you would like to contact me please send me a
                           message or email me.
                         </p>
-                        <ul class="list-ico">
+                        <ul className="list-ico">
                           {/* <li>
                             <span class="bi bi-geo-alt"></span> John Solomou
                           </li> */}
@@ -136,7 +136,7 @@ export default function Contact() {
                             <span class="bi bi-phone"></span> 
                           </li> */}
                           <li>
-                            <span class="bi bi-envelope"></span>{" "}
+                            <span className="bi bi-envelope"></span>{" "}
                             jsolomou79@gmail.com
                           </li>
                         </ul>
