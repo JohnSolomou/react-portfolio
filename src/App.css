@@ -235,6 +235,7 @@ p {
   width: 100%;
   font-size: 20px;
   text-align: left;
+  max-height: 400px;
 }
 .skill-mf {
   padding-top: 50px;
@@ -295,6 +296,9 @@ btn {
   }
   .m-img {
     width: 100%;
+  }
+  .about-info {
+    max-height: 750px;
   }
 }
 @media screen and (max-width: 400px) {

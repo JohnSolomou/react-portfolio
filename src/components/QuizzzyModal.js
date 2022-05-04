@@ -23,7 +23,7 @@ export default function QuizzzyModal(props) {
         <p>
           Created a Quiz app. This is an application for teachers to add a quiz
           for students to take.This application is using HTML, CSS, Javascript,
-          svg, and local storage.
+          svg, and local storage.This was my first application.
         </p>
       </ModalBody>
       <ModalFooter>

@@ -20,7 +20,8 @@ export default function ToDoModal(props) {
       </ModalHeader>
       <ModalBody>
         <p>
-          Created To Do app using React, firebase authentication and firestore.
+          Created To Do app using React, firebase authentication and
+          firestore.This is my third application.
         </p>
       </ModalBody>
       <ModalFooter>

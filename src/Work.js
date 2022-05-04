@@ -11,7 +11,7 @@ import QuizzzyModal from "./components/QuizzzyModal";
 import BHRecipeModal from "./components/BHRecipeModal";
 import ReactQuizModal from "./components/ReactQuizModal";
 import ToDoModal from "./components/ToDoModal";
-import { Card } from "react-bootstrap";
+import { Card, Badge } from "react-bootstrap";
 
 function Work() {
   const addModal = () => {
@@ -144,7 +144,9 @@ function Work() {
               />
             </a>
             <Card.Body className="container center">
-              <Card.Title style={{ color: "black" }}>React Quizzzy</Card.Title>
+              <Card.Title style={{ color: "black" }}>
+                React Quizzzy <Badge pill>Coming Soon</Badge>
+              </Card.Title>
 
               <div className=" col">
                 <div className="work-button">

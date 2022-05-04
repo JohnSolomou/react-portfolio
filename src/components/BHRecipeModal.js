@@ -23,7 +23,7 @@ export default function BHRecipeModal(props) {
           This is a Gluten-free Search app. Use this application to find
           delicious alternative with out the gluten. Developed front-end user
           experience using HTML, CSS, CSS Grid, Javascript, and RESTful APIs.
-          click here for github.
+          click here for github.This was my second application.
         </p>
       </ModalBody>
       <ModalFooter>

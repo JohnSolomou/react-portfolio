@@ -20,7 +20,7 @@ export default function ReactQuizModal(props) {
           Recreated my Quiz app using React. This is an application for anyone
           to add a quiz for anyone to take.This application is using HTML, CSS,
           Javascript, svg, postgreSQL, has sign in and private routes with
-          firebase authentication.
+          firebase authentication. This is my latest project.
         </p>
       </ModalBody>
       <ModalFooter>
