@@ -12,10 +12,10 @@ import "bootstrap/dist/js/bootstrap.min.js";
 // import Contact from "./Contact";
 function App() {
   return (
-    <div className="dark-hero">
+    <div className="dark-hero ">
       <Navigation></Navigation>
       <Hero />
-      <About />
+      <About className="" />
       <Work />
       <Contact />
 

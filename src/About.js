@@ -20,11 +20,11 @@ import terminal from "./img/terminal.png";
 import sass from "./img/sass.svg";
 function About() {
   return (
-    <div className="center move-down-about" id="about">
-      <section style={{ paddingTop: "100px" }}>
+    <div className="center move-down-about " id="about">
+      <section className="" style={{ paddingTop: "100px" }}>
         <h1
           className="co "
-          style={{ paddingTop: "20px", paddingBottom: "180px" }}
+          style={{ paddingTop: "20px", paddingBottom: "150px" }}
         >
           About
         </h1>

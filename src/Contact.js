@@ -106,7 +106,7 @@ export default function Contact() {
                               <div className="col-md-12 text-center">
                                 <button
                                   type="submit"
-                                  className="button button-a button-big button-rouded"
+                                  className="btn btn-primary mt-5"
                                 >
                                   Send Message
                                 </button>

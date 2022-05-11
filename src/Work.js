@@ -30,7 +30,7 @@ function Work() {
   return (
     <div className="work ">
       <div className="container pad">
-        <h2 id="work" className="pad mywork center mt-5">
+        <h2 id="work" className="pad  mywork center mt-5">
           My Work
         </h2>
         <div className=" row align-items-center  pad justify-content-between ">
@@ -48,7 +48,9 @@ function Work() {
               <Card.Img variant="top" src={Quizzzy} className="img-fluid" />
             </a>
             <Card.Body className="container center">
-              <Card.Title style={{ color: "black" }}>Quizzzy</Card.Title>
+              <Card.Title style={{ color: "black" }}>
+                Quizzzy<Badge pill>click below for more info</Badge>
+              </Card.Title>
 
               <div>
                 <div className="work-button">
@@ -81,7 +83,9 @@ function Work() {
               <Card.Img variant="top" src={bh} className="img-fluid" />
             </a>
             <Card.Body className="container center">
-              <Card.Title style={{ color: "black" }}>BHRecipe</Card.Title>
+              <Card.Title style={{ color: "black" }}>
+                BHRecipe<Badge pill>click below for more info</Badge>
+              </Card.Title>
 
               <div>
                 <div className="work-button">
@@ -110,7 +114,9 @@ function Work() {
               <Card.Img variant="top" src={ToDo} className="img-fluid" />
             </a>
             <Card.Body className="container center">
-              <Card.Title style={{ color: "black" }}>To Do</Card.Title>
+              <Card.Title style={{ color: "black" }}>
+                To Do<Badge pill>click below for more info</Badge>
+              </Card.Title>
 
               <div>
                 <div className="work-button">
@@ -162,24 +168,6 @@ function Work() {
               </div>
             </Card.Body>
           </Card>
-          {/* <div className="inner col">
-            <div onClick={addModal} className="btn inner  m-4 "></div>
-          </div> */}
-          {/* <div className="inner col">
-            <div onClick={addModal2} className="btn  m-4 ">
-              <img src={bh} alt="" style={{ width: "10rem" }} />
-            </div>
-          </div> */}
-          {/* <div className="inner col">
-            <div onClick={addModal3} className="btn  m-4 ">
-              <img src={ToDo} alt="" style={{ width: "10rem" }} />
-            </div> */}
-          {/* </div> */}
-          {/* <div className="inner col">
-            <div onClick={addModal4} className="btn  m-4 ">
-              <img src={quiz2} alt="" style={{ width: "10rem" }} />
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

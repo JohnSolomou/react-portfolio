@@ -4,9 +4,14 @@
   margin: 0;
   padding: 0;
 }
+html {
+  background: #000 url(../src/img/stars.png) repeat top center;
+  z-index: 0;
+}
 
 body {
-  background-color: black;
+  background: #000 url(../src/img/stars.png) repeat top center;
+  z-index: 0;
 }
 /* navbar */
 .navbar {
@@ -374,7 +379,7 @@ btn {
   margin: 0 0 0 0;
   color: #eee;
 }
-.button-rouded {
+.button-rounded {
   border-radius: 0.5rem;
   font-size: 1.2rem;
   background: #0078ff;

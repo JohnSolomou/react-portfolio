@@ -17,10 +17,10 @@ export default function ReactQuizModal(props) {
       <ModalBody>
         <p className="text-danger"> This is an app in progress.</p>
         <p>
-          Recreated my Quiz app using React. This is an application for anyone
-          to add a quiz for anyone to take.This application is using HTML, CSS,
-          Javascript, svg, postgreSQL, has sign in and private routes with
-          firebase authentication. This is my latest project.
+          Recreated my Quiz app using React with hooks. This is an application
+          for anyone to add a quiz for anyone to take. This application is using
+          HTML, CSS, Javascript, svg, postgreSQL, has sign in and private routes
+          with firebase authentication. This is my latest project.
         </p>
       </ModalBody>
       <ModalFooter>
