@@ -4,15 +4,7 @@
   margin: 0;
   padding: 0;
 }
-html {
-  background: #000 url(../src/img/stars.png) repeat top center;
-  z-index: 0;
-}
 
-body {
-  background: #000 url(../src/img/stars.png) repeat top center;
-  z-index: 0;
-}
 /* navbar */
 .navbar {
   z-index: 3;
@@ -65,14 +57,14 @@ div.move-down-about {
   margin-right: auto;
   text-align: center;
 
-  /* Stryling the text and giving it gradiant */
+  /* Styling the text and giving it gradient */
   color: #ffffff;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 
-  /* Make sure text is infront of background images */
+  /* Make sure text is in-front of background images */
   display: block;
   position: relative;
   z-index: 3;

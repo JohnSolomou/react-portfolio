@@ -9,13 +9,12 @@ import Contact from "./Contact";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-// import Contact from "./Contact";
 function App() {
   return (
     <div className="dark-hero ">
-      <Navigation></Navigation>
+      <Navigation />
       <Hero />
-      <About className="" />
+      <About />
       <Work />
       <Contact />
 

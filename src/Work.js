@@ -28,9 +28,9 @@ function Work() {
     ModalService.open(ReactQuizModal);
   };
   return (
-    <div className="work ">
+    <div className="work  ">
       <div className="container pad">
-        <h2 id="work" className="pad  mywork center mt-5">
+        <h2 id="work" className="pad mywork center mt-5">
           My Work
         </h2>
         <div className=" row align-items-center  pad justify-content-between ">
