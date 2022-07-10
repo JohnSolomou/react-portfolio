@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [name, setName] = useState("");
@@ -7,7 +8,8 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSend = async () => {
+  const handleSend = async (e) => {
+    e.preventDefault();
     setSent(true);
     try {
       await axios.post(`${process.env.REACT_APP_BACK_END_URL}/send_mail`, {
