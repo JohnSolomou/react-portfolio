@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React from "react";
 import ModalService from "../Services/ModalService";
 import styles from "../styles/ModalRoot.module.css";
 
